@@ -1,0 +1,133 @@
+/* reset */
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    font-size:62.5%;
+}
+@font-face {
+    font-family:"iranyekan";
+    src: url(/assets/fonts/iranyekan.ttf);
+    font-weight:400;
+}
+@font-face {
+    font-family:"iranyekan";
+    src: url(/assets/fonts/BYekan+\ Bold.ttf);
+    font-weight:700;
+}
+body,button{
+    font-family:"iranyekan";
+    color: var(--color-body);
+    font-size:1.4rem;
+}
+.block{
+    padding: 6rem 2rem;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* challenge */
+
+
+.challenge__title{
+    padding-bottom: 10rem;
+}
+.challenge__main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap:5rem;
+    row-gap: 5rem;
+}
+.challenge__blocks{
+    /* background-color: gold; */
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+}
+.challenge--btn{
+    width: fit-content;
+    padding:0.8rem 1.2rem;
+    border: 0;
+    border-radius:5px;
+    background-color:rgb(86, 190, 168);
+    color: white;
+}
+.btn--second{
+    padding:2rem;
+    border-radius: 10px;
+    font-size:1.7rem;
+
+}
+.flex-1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom:1rem;
+}
+.flex-1 .challenge__date{
+    color: rgb(136, 136, 136);
+}
+.flex-1 .challenge__upload{
+    width: 100%;
+    padding-right:1rem;
+    font-size:1.5rem;
+}
+.date--color{
+    color:rgb(136, 136, 136);
+    padding-bottom:1.5rem;
+}
+.flex-2{
+    display: flex;
+    align-items: center;
+}
+.flex-2 span{
+    flex-grow: 1;
+    padding-right: 1rem;
+    font-size:2rem;
+}
+.flex-2 img{
+    width:45px;
+    border-radius: 10px;
+}
+h2{
+    padding-bottom: 0.2rem;
+}
+
+@media screen and (max-width:1024px) {
+    .challenge__main{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .btn--second{
+        padding:1rem;
+        font-size:1.7rem;
+    }
+    .flex-2 span{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .challenge__main{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .btn--second{
+        padding:1rem;
+        font-size:1.7rem;
+    }
+    .flex-2 span{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size:2rem;
+    }
+}
+
